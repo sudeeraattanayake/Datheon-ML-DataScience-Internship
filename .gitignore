@@ -1,5 +1,96 @@
+
+# ============================================================
+# Datheon Machine Learning & Data Science Internship
+# Git Ignore Configuration
+# ============================================================
+
+# Python Virtual Environments
 .venv/
+venv/
+env/
+ENV/
+
+# Python Cache
 __pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook
 .ipynb_checkpoints/
+.jupyter/
+
+# Environment Variables and Secrets
 .env
-*.pyc
+.env.*
+!.env.example
+*.key
+*.pem
+
+# IDE and Editor Files
+.vscode/
+.idea/
+
+# OS Generated Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Python Build and Distribution
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Testing and Coverage
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Temporary and Log Files
+*.log
+*.tmp
+*.temp
+*.bak
+
+# ============================================================
+# TASK 04 - IMDb Large Sentiment Dataset
+# ============================================================
+
+# Downloaded IMDb dataset folders
+/Task-04-NLP-Sentiment-Classification/data/
+/Task-04-NLP-Sentiment-Classification/dataset/
+
+# Large raw dataset formats
+/Task-04-NLP-Sentiment-Classification/*.parquet
+/Task-04-NLP-Sentiment-Classification/*.tar.gz
+/Task-04-NLP-Sentiment-Classification/*.zip
+
+# Generated full IMDb CSV dataset
+/Task-04-NLP-Sentiment-Classification/imdb_reviews.csv
+
+# ============================================================
+# Keep Project Source Code and Small Starter Dataset
+# ============================================================
+
+# Keep:
+# sentiment_classification.ipynb
+# sentiment_reviews.csv
+# text_preprocessing.py
+# README.md
+# requirements.txt
+
+# ============================================================
+# Model Files
+# ============================================================
+
+# Ignore oversized model checkpoints and training artifacts
+*.ckpt
+*.pth
+*.pt
+*.h5
+*.hdf5
+
+# Keep .joblib models unless excluded separately.
+# GitHub rejects regular files larger than 100 MB.
