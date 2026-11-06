@@ -1,7 +1,24 @@
+# Core Data Science
 numpy
 pandas
+
+# Data Visualization
 matplotlib
 seaborn
+
+# Machine Learning
 scikit-learn
+xgboost
+
+# Natural Language Processing
+nltk
+
+# Parquet Dataset Support
+pyarrow
+
+# Model Persistence
+joblib
+
+# Jupyter Environment
 ipykernel
 notebook
